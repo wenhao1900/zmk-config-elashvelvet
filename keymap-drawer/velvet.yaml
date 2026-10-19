@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: velvet}
 layers:
   BASE:
-  - Esc
+  - '&mkp LCLK'
   - Q
   - W
   - E
@@ -13,21 +13,21 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - A
-  - S
-  - D
-  - F
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - '&mkp MCLK'
   - H
   - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
+  - '&mkp RCLK'
+  - {t: '4', h: to}
   - Z
   - X
   - C
@@ -39,169 +39,174 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - Esc
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_DOWN'
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-outline$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ',', h: '1', s: <}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-caps$$
-  - '3'
-  - '1'
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - '2'
-  - {t: \, s: '|'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-right$$
   '1':
+  - {t: ▽, type: trans}
   - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
+  - $$mdi:arrow-up$$
   - {t: '3', s: '#'}
   - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: ▽, type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '0', s: )}
-  - $$mdi:backspace-reverse$$
   - {t: ▽, type: trans}
-  - $$mdi:play-pause$$
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-plus$$
+  - {t: '3', s: '#'}
+  - {t: '6', s: ^}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - Esc
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - F12
-  - {t: ▽, type: trans}
-  - AL MY COMPUTER
-  - AL CALCULATOR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PgUp
-  - PgDn
-  - Home
-  - End
-  - INSERT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '2':
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: ▽, type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RGB OFF
-  - RGB OFF
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: held}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  '3':
-  - F1
-  - F2
-  - $$mdi:arrow-up$$
-  - F3
-  - F4
-  - F5
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
   - {t: ▽, type: trans}
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
+  - {t: '0', s: )}
+  - {t: '8', s: '*'}
+  - {t: ▽, type: trans}
+  - {t: '2', s: '@'}
+  - {t: '5', s: '%'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '''', s: '"'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:volume-minus$$
+  - MUTE
+  - $$mdi:volume-plus$$
+  - {t: ▽, type: trans}
+  - {t: '7', s: '&'}
+  - {t: ▽, type: trans}
+  - {t: '1', s: '!'}
+  - {t: '4', s: $}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-caps$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
+  - {t: ',', h: '1', s: <, type: held}
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: ▽, type: trans}
+  '2':
+  - {t: ▽, type: trans}
+  - {t: '3', h: to}
+  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - Alt+Q
+  - Alt+A
+  - {t: ▽, type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LGUI
+  - $$mdi:keyboard-space$$
+  - {t: '0', s: ), type: held}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - {t: '0', s: )}
+  - {t: '0', s: )}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: ▽, type: trans}
+  - {t: BASE, h: to}
+  - W
+  - '&mkp MB4'
+  - {t: '4', h: to}
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: BASE, h: to}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '4', h: to}
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-right$$
+  - C
+  - V
+  - '&mkp MB1'
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: Gui+=, s: Gui++}
+  - {t: Gui+0, s: Gui+)}
+  - {t: Gui+-, s: Gui+_}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:backspace-outline$$', h: '4'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - '&mkp MB1'
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: ▽, type: trans}
   '4':
   - {t: ▽, type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', h: to}
+  - Alt+A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,18 +241,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LGUI
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '5':
@@ -401,5 +401,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 11]
-  k: $$mdi:download-circle$$
+- p: [4, 5]
+  k: (
+- p: [7, 8]
+  k: )
+- p: [30, 31]
+  k: Sft+'
+- p: [33, 34]
+  k: ''''
+- p: [1, 2]
+  k: Esc
