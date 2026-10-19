@@ -40,9 +40,10 @@
         input-processors = <&mouse_runtime_input_processor>;
 
         scroller {
-            layers = <5>;
+            layers = <4>;
             input-processors =
-                <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_scaler 1 9>,
                 <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
         };
     };
