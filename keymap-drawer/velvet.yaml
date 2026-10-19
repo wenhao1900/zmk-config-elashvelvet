@@ -20,7 +20,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - '&mkp MCLK'
+  - MUTE
   - H
   - J
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
