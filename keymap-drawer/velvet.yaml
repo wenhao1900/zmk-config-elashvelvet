@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&mkp RCLK'
+  - $$mdi:volume-plus$$
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - C
   - V
   - B
-  - '&mkp LCLK'
+  - $$mdi:volume-minus$$
   - N
   - M
   - {t: ',', s: <}
