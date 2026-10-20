@@ -130,10 +130,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp GRAVE          &kp UP_ARROW              &kp N3              &kp N4          &kp N9        &trans  &kp NUMBER_3  &kp NUMBER_6  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp ESC   &trans
-&trans  &kp LEFT_ARROW     &kp DOWN_ARROW            &kp RIGHT_ARROW     &kp NUMBER_0    &kp NUMBER_8  &trans  &kp NUMBER_2  &kp N5        &kp MINUS      &kp EQUAL          &kp SQT   &trans
-&trans  &kp C_VOLUME_DOWN  &kp K_MUTE                &kp C_VOLUME_UP     &trans          &kp N7        &trans  &kp NUMBER_1  &kp NUMBER_4  &kp LBKT       &kp RBKT           &kp CAPS  &trans
-        &trans             &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI SPACE  &kp LEFT_SHIFT  &kp SPACE             &lt 1 COMMA   &kp TAB       &kp TAB        &kp ENTER          &trans
+&trans  &kp GRAVE          &kp UP_ARROW              &kp N3              &kp N4          &kp N9        &trans      &kp NUMBER_3  &kp NUMBER_6  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp ESC   &trans
+&trans  &kp LEFT_ARROW     &kp DOWN_ARROW            &kp RIGHT_ARROW     &kp NUMBER_0    &kp NUMBER_8  &kp K_MUTE  &kp NUMBER_2  &kp N5        &kp MINUS      &kp EQUAL          &kp SQT   &trans
+&trans  &kp C_VOLUME_DOWN  &kp K_MUTE                &kp C_VOLUME_UP     &trans          &kp N7        &trans      &kp NUMBER_1  &kp NUMBER_4  &kp LBKT       &kp RBKT           &kp CAPS  &trans
+        &trans             &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI SPACE  &kp LEFT_SHIFT  &kp SPACE                 &lt 1 COMMA   &kp TAB       &kp TAB        &kp ENTER          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
