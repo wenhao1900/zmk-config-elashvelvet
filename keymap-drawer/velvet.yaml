@@ -40,8 +40,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - Esc
-  - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-outline$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
