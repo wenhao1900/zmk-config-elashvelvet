@@ -29,7 +29,7 @@
 &msc {
     acceleration-exponent = <0>;
     time-to-max-speed-ms = <0>;
-    delay-ms = <300>;                 // Grace period before continuous scrolling.
+    delay-ms = <(300 * 32768 / 1000)>; // Driver uses ticks here: 300 ms at verified 32768 Hz.
 };
 
 &mmv {
@@ -42,7 +42,7 @@
     scroll_burst_listener {
         compatible = "zmk,input-listener";
         device = <&scroll_burst>;
-        input-processors = <&zip_scroll_scaler 2 1>;
+        input-processors = <&zip_scroll_scaler 1 1>;
     };
 
     scroll_encoder: scroll_encoder {
