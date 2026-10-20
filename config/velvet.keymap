@@ -29,7 +29,7 @@
 &msc {
     acceleration-exponent = <0>;
     time-to-max-speed-ms = <0>;
-    delay-ms = <0>;                   // 0
+    delay-ms = <300>;                 // Grace period before continuous scrolling.
 };
 
 &mmv {
