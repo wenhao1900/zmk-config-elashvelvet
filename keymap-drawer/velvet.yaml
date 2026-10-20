@@ -70,7 +70,7 @@ layers:
   - $$mdi:arrow-right$$
   - {t: '0', s: )}
   - {t: '8', s: '*'}
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: '2', s: '@'}
   - {t: '5', s: '%'}
   - {t: '-', s: _}
