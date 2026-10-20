@@ -121,7 +121,7 @@
 &mkp LCLK  &kp Q             &kp W               &kp E           &kp R            &kp T               &kp C_VOL_UP       &kp Y        &kp U      &kp I            &kp O                &kp P                      &mkp LCLK
 &mkp RCLK  &hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F   &kp G               &kp LG(N0)         &kp H        &kp J      &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMICOLON  &mkp RCLK
 &tog 4     &kp Z             &kp X               &kp C           &kp V            &kp B               &kp C_VOLUME_DOWN  &kp N        &kp M      &kp COMMA        &kp DOT              &kp FSLH                   &kp ESC
-           &mmv MOVE_UP      &mmv MOVE_DOWN      &kp TAB         &lt 2 BACKSPACE  &mt LEFT_GUI SPACE                     &lt 1 COMMA  &kp ENTER  &kp CAPS         &kp LEFT_ARROW       &kp RIGHT
+           &msc SCRL_UP      &msc SCRL_DOWN      &kp TAB         &lt 2 BACKSPACE  &mt LEFT_GUI SPACE                     &lt 1 COMMA  &kp ENTER  &kp CAPS         &kp LEFT_ARROW       &kp RIGHT
             >;
 
             label = "BASE";
