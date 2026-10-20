@@ -42,7 +42,7 @@
     scroll_burst_listener {
         compatible = "zmk,input-listener";
         device = <&scroll_burst>;
-        input-processors = <&zip_scroll_scaler 18 1>;
+        input-processors = <&zip_scroll_scaler 2 1>;
     };
 
     scroll_encoder: scroll_encoder {
