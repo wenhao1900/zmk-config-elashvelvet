@@ -40,8 +40,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - Esc
-  - {t: '&scroll_tap MOVE_Y(200)', h: '&msc SCRL_UP'}
-  - {t: '&scroll_tap MOVE_Y(-200)', h: '&msc SCRL_DOWN'}
+  - '&scroll_key SCRL_UP MOVE_Y(200)'
+  - '&scroll_key SCRL_DOWN MOVE_Y(-200)'
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-outline$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
@@ -158,10 +158,10 @@ layers:
   - {t: '4', h: to}
   - '&mkp MB1'
   - {t: ▽, type: trans}
-  - {t: '&scroll_tap MOVE_X(-200)', h: '&msc SCRL_LEFT'}
-  - {t: '&scroll_tap MOVE_Y(-200)', h: '&msc SCRL_DOWN'}
-  - {t: '&scroll_tap MOVE_Y(200)', h: '&msc SCRL_UP'}
-  - {t: '&scroll_tap MOVE_X(200)', h: '&msc SCRL_RIGHT'}
+  - '&scroll_key SCRL_LEFT MOVE_X(-200)'
+  - '&scroll_key SCRL_DOWN MOVE_Y(-200)'
+  - '&scroll_key SCRL_UP MOVE_Y(200)'
+  - '&scroll_key SCRL_RIGHT MOVE_X(200)'
   - {t: BASE, h: to}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
