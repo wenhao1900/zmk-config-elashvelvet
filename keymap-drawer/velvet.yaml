@@ -20,7 +20,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - MUTE
+  - {t: Gui+0, s: Gui+)}
   - H
   - J
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
