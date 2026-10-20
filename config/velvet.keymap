@@ -24,7 +24,7 @@
     };
 };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 60 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 90 1>; };
 
 &msc {
     acceleration-exponent = <0>;
